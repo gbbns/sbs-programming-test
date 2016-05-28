@@ -1,0 +1,51 @@
+// Debugging utility belt
+
+//* {
+//	outline: 1px solid $c-brand-primary;
+//}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+.u {
+
+  &-element--left {
+    float: left;
+  }
+
+  &-element--right {
+    float: right;
+  }
+
+  &-text--center {
+    text-align: center;
+  }
+
+  &-display--block {
+    display: block;
+  }
+
+  &-margin--none {
+    margin: 0;
+  }
+}
+
+.u-hide--sml {
+  @include respond-max($d-bp-medium) {
+    display: none;
+  }
+}
+
+.u-hide--lrg {
+  @include respond-min($d-bp-medium) {
+    display: none;
+  }
+}

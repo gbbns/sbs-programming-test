@@ -1,0 +1,17 @@
+a {
+	color: $c-site__link;
+	text-decoration: none;
+	transition: all 0.25s;
+
+	&:hover {
+		color: $c-site__link--hover;
+	}
+}
+
+ul {
+	padding-left: 0;
+}
+
+.f-brand {
+	font-family: $f-family-heading;
+}

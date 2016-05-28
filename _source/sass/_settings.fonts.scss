@@ -1,0 +1,37 @@
+
+$f-family: sans-serif;
+$f-family-heading: 'maryann-regular', Times, Times New Roman, serif;
+
+$f-base-px: 16px;
+
+@font-face {
+  font-family: 'maryann-bold';
+  src: url('/assets/fonts/mary_ann_web-bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/mary_ann_web-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'maryann-light';
+  src: url('/assets/fonts/mary_ann_web-light-webfont.woff2') format('woff2'),
+       url('/assets/fonts/mary_ann_web-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'maryann-medium';
+  src: url('/assets/fonts/mary_ann_web-medium-webfont.woff2') format('woff2'),
+       url('/assets/fonts/mary_ann_web-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'maryann-regular';
+  src: url('/assets/fonts/mary_ann_web-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/mary_ann_web-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
