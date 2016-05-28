@@ -1,0 +1,30 @@
+<!doctypehtml>
+<html>
+<head>
+  <title>Latest photos tagged 'London'</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+  <main id="flickr-gallery">
+
+  </main>
+
+
+  <script type="text/javascript" src="/assets/scripts/main.js"></script>
+  <script type="text/javascript">
+    // Callback only worked when moved function to glo
+    function FlickrCallBack(data)  {
+      //use returned data
+      window.FlickrGallery.init(data);
+    }
+
+    (function () {
+      var tags=  'london';
+      var script = document.createElement('script');
+      script.src = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=window.FlickrCallBack&tags=' + tags;
+      document.head.appendChild(script);
+    })();
+
+  </script>
+</body>
+</html>
