@@ -25,6 +25,8 @@ require('./project_tasks/scripts.js')(gulp, config, argv);
 require('./project_tasks/server.js')(gulp, config, argv);
 require('./project_tasks/styles.js')(gulp, config, argv);
 
+require('./project_tasks/tests.js')(gulp, config, argv);
+
 /* ============================================================ *\
     Gulp tasks
 \* ============================================================ */
@@ -52,5 +54,11 @@ gulp.task('default', function (callback) {
     'html',
     'watch',
     'browser-sync'
+  );
+});
+
+gulp.task('tdd', function (callback) {
+  runSeq(
+    'tests'
   );
 });
