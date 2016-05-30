@@ -42,9 +42,10 @@ window.ImageTile = (function(undefined)  {
   function buildTile(data){
     var newTile;
     var buildTileInfo = data;
+    var buildTileCSS = window.localstorageItem.loadItem(buildTileInfo.link);
 
     newTile = '<div class="c-gallery-tile">' +
-                '<img data-id="'+ buildTileInfo.link +'" src="' + buildTileInfo.thumb + '" alt="' + buildTileInfo.title + '" />' +
+                '<img class="' + buildTileCSS + '" data-id="'+ buildTileInfo.link +'" src="' + buildTileInfo.thumb + '" alt="' + buildTileInfo.title + '" />' +
               '</div>';
 
     return newTile;

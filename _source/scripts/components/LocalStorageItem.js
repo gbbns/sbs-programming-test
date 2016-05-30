@@ -9,13 +9,16 @@ window.localstorageItem = (function(undefined)  {
     window.localStorage.setItem(imageLink, 'selected');
   }
 
-  function loadLocalItem() {
-    var localImageID = localStorage.getItem("FlickrGalleryImageID");
+  function loadLocalItem(imageLink) {
+    var cssClass = "";
 
-    if (!localImageID === null) {
-      console.log('ImageID = ', localImageID);
-      // hero.setAttribute("src", heroURL);
+    var localImageID = window.localStorage.getItem(imageLink);
+
+    if (localImageID) {
+      cssClass = "is-selected";
     }
+
+    return cssClass;
   }
 
   function removeLocalItem(imageLink){
