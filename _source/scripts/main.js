@@ -30,7 +30,7 @@ window.FlickrGallery = (function(undefined)  {
 
   }
 
-  function handleItemClick(){
+  function handleItemClick(event){    
     event.preventDefault();
 
     var clickedItemClass = event.target.className;
