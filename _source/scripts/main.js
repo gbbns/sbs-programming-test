@@ -2,7 +2,9 @@ window.FlickrGallery = (function(undefined)  {
   "use strict";
 
   var GalleryStage = 'flickr-gallery';
-  var GALLERY_TILE = 'c-gallery-tile';
+
+  var GALLERY_TILE = 'c-gallery-tile',
+      SELECTED_CLASS = 'is-selected';
 
   function init(data){
 
@@ -37,13 +39,18 @@ window.FlickrGallery = (function(undefined)  {
   }
 
   function handleItemClick(){
-    var clickedItemID = event.target.dataset.id;
-    window.localstorageItem.saveItem(clickedItemID);
-    checkSelectedStatus(clickedItemID);
-  }
+    event.preventDefault();
 
-  function checkSelectedStatus(){
+    var clickedItemClass = event.target.className;
+    var clickedItemDataID = event.target.dataset.id;
 
+    if (event.target.className === SELECTED_CLASS){
+      window.localstorageItem.removeItem(clickedItemDataID);
+      event.target.className = '';
+    } else {
+      window.localstorageItem.saveItem(clickedItemDataID);
+      event.target.className += SELECTED_CLASS;
+    }
   }
 
   return {
