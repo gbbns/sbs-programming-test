@@ -1,0 +1,38 @@
+#flickr-gallery {
+  flex-direction: row;
+  align-items: flex-start;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.c-gallery-tile {
+  box-sizing: border-box;
+  padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  height: 300px;
+  width: 33%;
+
+  p {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.is-selected {
+    img {
+      -webkit-box-shadow: 0px 0px 0px 5px rgba(237,102,102,1);
+      -moz-box-shadow: 0px 0px 0px 5px rgba(237,102,102,1);
+      box-shadow: 0px 0px 0px 5px rgba(237,102,102,1);
+    }
+  }
+}
