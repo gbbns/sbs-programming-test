@@ -12,21 +12,13 @@ window.FlickrGallery = (function(undefined)  {
       return;
     }
 
-    console.log(data);
     setupGallery(data);
-
-    // localstorage test
-
-    // setup event listeners
     addListeners();
   }
 
   function setupGallery(data){
-
     // process data
     window.GalleryReader.init(data);
-
-
   }
 
   function addListeners(){
