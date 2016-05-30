@@ -3,6 +3,8 @@ window.FlickrGallery = (function(undefined)  {
 
   var GalleryStage = 'flickr-gallery';
 
+  var GALLERY_TILE = 'c-gallery-tile';
+
   function init(data){
 
     if(!document.getElementById(GalleryStage)){
@@ -27,7 +29,7 @@ window.FlickrGallery = (function(undefined)  {
   }
 
   function addListeners(){
-    var galleryEl = document.getElementsByClassName("c-gallery-tile");
+    var galleryEl = document.getElementsByClassName(GALLERY_TILE);
 
     for (var i = 0; i < galleryEl.length; i++) {
       galleryEl[i].addEventListener("click", handleItemClick);
@@ -36,7 +38,7 @@ window.FlickrGallery = (function(undefined)  {
   }
 
   function handleItemClick(){
-  
+
   }
 
 
