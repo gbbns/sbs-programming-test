@@ -2,7 +2,6 @@ window.FlickrGallery = (function(undefined)  {
   "use strict";
 
   var GalleryStage = 'flickr-gallery';
-
   var GALLERY_TILE = 'c-gallery-tile';
 
   function init(data){
@@ -38,10 +37,14 @@ window.FlickrGallery = (function(undefined)  {
   }
 
   function handleItemClick(){
-
+    var clickedItemID = event.target.dataset.id;
+    window.localstorageItem.saveItem(clickedItemID);
+    checkSelectedStatus(clickedItemID);
   }
 
+  function checkSelectedStatus(){
 
+  }
 
   return {
     init: init
