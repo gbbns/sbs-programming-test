@@ -10,6 +10,10 @@ window.localstorageItem = (function(undefined)  {
   }
 
   function loadLocalItem(imageLink) {
+    if (!window.localStorage) {
+      return;
+    }
+
     var cssClass = "";
 
     var localImageID = window.localStorage.getItem(imageLink);
@@ -22,6 +26,10 @@ window.localstorageItem = (function(undefined)  {
   }
 
   function removeLocalItem(imageLink){
+    if (!window.localStorage) {
+      return;
+    }
+    
     window.localStorage.removeItem(imageLink);
   }
 
