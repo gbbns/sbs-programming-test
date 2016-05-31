@@ -1,0 +1,112 @@
+
+
+  true
+[2K[0G    1) should be true
+
+
+  0 passing (9ms)
+  1 failing
+
+  1) true should be true:
+     undefined is not an object (evaluating 'true.should.equal')
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/test/testRunner.html:16:32
+  callFn@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4471:25
+  run@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4464:13
+  runTest@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4934:13
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:5040:19
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4854:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4864:11
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4796:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4832:9
+  timeslice@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:75:27
+
+
+
+
+
+  true
+[2K[0G    ✓ should be true
+
+
+  1 passing (7ms)
+
+
+
+  true
+[2K[0G    ✓ should be true
+
+  Flickr API test
+null
+[2K[0G    1) should check gallery container exists
+
+
+  1 passing (8ms)
+  1 failing
+
+  1) Flickr API test should check gallery container exists:
+     Can't find variable: expect
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/test/testRunner.html:26:23
+  callFn@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4471:25
+  run@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4464:13
+  runTest@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4934:13
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:5040:19
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4854:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4864:11
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4796:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4832:9
+  timeslice@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:75:27
+
+
+
+
+
+  true
+[2K[0G    ✓ should be true
+
+  Flickr API test
+null
+[2K[0G    1) should check gallery container exists
+
+
+  1 passing (10ms)
+  1 failing
+
+  1) Flickr API test should check gallery container exists:
+     Can't find variable: expect
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/test/testRunner.html:28:23
+  callFn@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4471:25
+  run@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4464:13
+  runTest@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4934:13
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:5040:19
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4854:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4864:11
+  next@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4796:16
+  file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:4832:9
+  timeslice@file:///Users/christopher.gibbons/Sites/sbs-programming-test/node_modules/mocha/mocha.js:75:27
+
+
+
+
+
+  true
+[2K[0G    ✓ should be true
+
+  Flickr API test
+#flickr-gallery
+[2K[0G    ✓ should check gallery container exists
+
+
+  2 passing (9ms)
+
+
+
+  true
+[2K[0G    ✓ should be true
+
+  Flickr API test
+#flickr-gallery
+[2K[0G    ✓ should check gallery container exists
+
+
+  2 passing (13ms)
+
