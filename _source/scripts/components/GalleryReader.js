@@ -1,6 +1,6 @@
 window.GalleryReader = (function(undefined)  {
   "use strict";
-  
+
   var dataLength;
   var GalleryStage = 'flickr-gallery';
 
@@ -18,8 +18,8 @@ window.GalleryReader = (function(undefined)  {
 
   function displayImageTile(imageTileInfo){
 
-    var test = document.getElementById(GalleryStage);
-    test.innerHTML += imageTileInfo;
+    var galleryStageEl = document.getElementById(GalleryStage);
+    galleryStageEl.innerHTML += imageTileInfo;
   }
 
   return {
