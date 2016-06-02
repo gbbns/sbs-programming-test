@@ -10,10 +10,10 @@
 
 .c-gallery-tile {
   box-sizing: border-box;
-  padding: 10px;
+  padding: remy($d-base-spacing / 2);
   display: -webkit-flex;
   display: flex;
-  height: 300px;
+  height: remy($d-tile-height);
   width: 33%;
   overflow: hidden;
 

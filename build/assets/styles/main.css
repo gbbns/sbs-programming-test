@@ -2679,10 +2679,10 @@ ul {
 
 .c-gallery-tile {
   box-sizing: border-box;
-  padding: 10px;
+  padding: remy(10px);
   display: -webkit-flex;
   display: flex;
-  height: 300px;
+  height: remy(300px);
   width: 33%;
   overflow: hidden; }
   .c-gallery-tile p:first-of-type {

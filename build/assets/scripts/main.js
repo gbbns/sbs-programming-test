@@ -72,8 +72,8 @@ window.GalleryReader = function (undefined) {
 
   function displayImageTile(imageTileInfo) {
 
-    var test = document.getElementById(GalleryStage);
-    test.innerHTML += imageTileInfo;
+    var galleryStageEl = document.getElementById(GalleryStage);
+    galleryStageEl.innerHTML += imageTileInfo;
   }
 
   return {
@@ -151,6 +151,10 @@ window.localstorageItem = function (undefined) {
   }
 
   function loadLocalItem(imageLink) {
+    if (!window.localStorage) {
+      return;
+    }
+
     var cssClass = "";
 
     var localImageID = window.localStorage.getItem(imageLink);
@@ -163,6 +167,10 @@ window.localstorageItem = function (undefined) {
   }
 
   function removeLocalItem(imageLink) {
+    if (!window.localStorage) {
+      return;
+    }
+
     window.localStorage.removeItem(imageLink);
   }
 
